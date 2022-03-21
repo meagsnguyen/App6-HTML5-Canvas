@@ -55,6 +55,9 @@ function myName() {
 	var b_context = b_canvas.getContext ("2d"); // finds the canvas element in the DOM/web
 	b_context.font = '48px serif'; // picks the font that i choose to display my name with
 	b_context.fillText('Meagan Nguyen', 20, 100); // fills with text that is contained in the parenthesis (my actual name), with where it goes on the canvas x,y 
+
+}
+	
 </script>
 
 
@@ -101,7 +104,7 @@ function myName() {
 		<!-- dimensions are 400x400 because it fits webpage on both, laptop/iphone screen -->	
 	     	<canvas id="b" width="400" height="400" style="border:1px solid #000000;"></canvas> <!-- creates a border -->
 		<a onclick="rect();" class="w3-btn w3-green"> Rectangle</a> <!-- button to showcase the button to display rectangle -->
-		<a onclick="myName()" class="w3-btn w3-green"> Name</a> <!-- button to display my name -->
+		<a onclick="myName()" class="w3-btn w3-red"> Name</a> <!-- button to display my name -->
 	
 	</div>
 </div>
