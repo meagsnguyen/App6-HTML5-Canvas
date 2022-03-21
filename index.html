@@ -22,7 +22,8 @@ To display elements, such as rectangles, on an HMTL5 page, also known as a canva
 Known Issues:
 Some known issues are:
 	- getting the code precise and having the correct code elements for the code to get noticed by the webpage.
-	- knwoing to add a new page and what the coding segments were for it
+	- knowing to add a new page and what the coding segments were for it
+	- keeping up with the b_context and b_canvas to correspond to each variable
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -79,7 +80,7 @@ function clearCanvas() {
 	
 </script>
 
-
+<!-- creates style/format for webpage -->
 
 <style>	
 .body {
@@ -103,13 +104,13 @@ function clearCanvas() {
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
+	<h1>App6---HTML5-Canvas</h1> <!-- header of page to let user know the title of assignment -->
 </div>
 	
 <div id="content" class="w3-container"> 
 	<p>Objective: display elements onto a portion of an HTML5 page, known as a canvas.</p> 
 	
-	<a href="#one" class="w3-btn w3-grey w3-round"> Go to the canvas. </a>
+	<a href="#one" class="w3-btn w3-grey w3-round"> Go to the canvas. </a> <!-- tells user to go to canvas so they can see content -->
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
@@ -117,15 +118,15 @@ function clearCanvas() {
 </div>
 <!-- new page that has the canvas with the required elements (4 buttons) --> 
 
-<div class="page" id="one">
+<div class="page" id="one"> <!-- creates new page for canvas -->
 	
-	<div id="content" class ="w3-container">
+	<div id="content" class ="w3-container"> <!-- creats id for page -->
 		<!-- dimensions are 400x400 because it fits webpage on both, laptop/iphone screen -->	
 	     	<canvas id="b" width="400" height="400" style="border:1px solid #000000;"></canvas> <!-- creates a border -->
 		<a onclick="rect();" class="w3-btn w3-green"> Rectangle</a> <!-- button to showcase the button to display rectangle -->
 		<a onclick="myName();" class="w3-btn w3-red"> Name</a> <!-- button to display my name -->
-		<a onclick="insertImage();" class="w3-btn w3-grey"> Image</a>
-		<a onclick="clearCanvas();" class="w3-btn w3-blue"> Clear</a>
+		<a onclick="insertImage();" class="w3-btn w3-grey"> Image</a> <!-- button to display chosen image -->
+		<a onclick="clearCanvas();" class="w3-btn w3-blue"> Clear</a> <!-- button that clears canvas -->
 	</div>
 </div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
