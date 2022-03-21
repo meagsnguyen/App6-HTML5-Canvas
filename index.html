@@ -54,7 +54,7 @@ function myName() { 	// function displays name onto canvas
 	var b_canvas = document.getElementById("b"); // finds the canvas element in the DOM/web
 	var b_context = b_canvas.getContext ("2d"); // finds the canvas element in the DOM/web
 	b_context.font = "30px Arial"; // picks the font that i choose to display my name with
-	b_context.strokeText(" Meagan Nguyen ", 20, 130); // fills with text that is contained in the parenthesis (my actual name), with where it goes on the canvas x,y 
+	b_context.strokeText(" Meagan Nguyen ", 20, 100); // fills with text that is contained in the parenthesis (my actual name), with where it goes on the canvas x,y 
 
 }
 	
@@ -67,6 +67,14 @@ function insertImage() {	// function displays chosen image onto canvas
 	};
 	img.src = 'https://ih1.redbubble.net/image.1398497573.6380/st,small,507x507-pad,600x600,f8f8f8.jpg'; // image URL is defined, URL is from google and is obtained from copy link address
 
+}
+	
+
+function clearCanvas() {
+	var b_canvas = document.getElementById("b"); // calls canvas to webpage
+	var b_context = b_canvas.getContext("2d"); // calls canvas to webpage
+	b_context.clearRect(0, 0, b_canavas.width, b_canvas.height); // clears canvas by the dimension of the canvas
+	
 }
 	
 </script>
@@ -117,6 +125,7 @@ function insertImage() {	// function displays chosen image onto canvas
 		<a onclick="rect();" class="w3-btn w3-green"> Rectangle</a> <!-- button to showcase the button to display rectangle -->
 		<a onclick="myName();" class="w3-btn w3-red"> Name</a> <!-- button to display my name -->
 		<a onclick="insertImage();" class="w3-btn w3-grey"> Image</a>
+		<a onclick="clearCanvas();" class="w3-btn w3-blue"> Clear</a>
 	</div>
 </div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
