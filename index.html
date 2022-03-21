@@ -54,7 +54,7 @@ function myName() { 	// function displays name onto canvas
 	var b_canvas = document.getElementById("b"); // finds the canvas element in the DOM/web
 	var b_context = b_canvas.getContext ("2d"); // finds the canvas element in the DOM/web
 	b_context.font = "30px Arial"; // picks the font that i choose to display my name with
-	b_context.strokeText(" Meagan Nguyen ", 20, 50); // fills with text that is contained in the parenthesis (my actual name), with where it goes on the canvas x,y 
+	b_context.strokeText(" Meagan Nguyen ", 20, 130); // fills with text that is contained in the parenthesis (my actual name), with where it goes on the canvas x,y 
 
 }
 	
@@ -63,7 +63,7 @@ function insertImage() {	// function displays chosen image onto canvas
 	var b_context = b_canvas.getContext("2d"); // calls canvas to webpage
 	var img = new Image(); // creates var to pull image to link
 	img.onload = function() { // image is loaded 
-			b_context.drawImage(img, 10, 20); // selects chosen image and positions it in x,y dimensions
+			b_context.drawImage(img, 10, 10); // selects chosen image and positions it in x,y dimensions
 	};
 	img.src = 'https://ih1.redbubble.net/image.1398497573.6380/st,small,507x507-pad,600x600,f8f8f8.jpg'; // image URL is defined, URL is from google and is obtained from copy link address
 
