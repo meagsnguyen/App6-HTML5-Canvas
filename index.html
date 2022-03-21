@@ -44,12 +44,17 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	
 function rect() {	// name of function, purpose of function is to draw a rectangle on the canavas
-	var b_canvas = document.getElementById("b"); // finds the canvas element in the DOM/web
+	var b_canvas = document.getElementById("b"); // finds the canvas element in the DOM/web, must pass b to get to 2d, and the following code
 	var b_context = b_canvas.getContext ("2d"); // finds the canvas element in the DOM/web
 	b_context.fillRect(50, 25, 150, 100); // fills canvas with rectangle with the desired dimensions, (x, y, width, height)
 
 }
 	
+function myName() {
+	var b_canvas = document.getElementById("b"); // finds the canvas element in the DOM/web
+	var b_context = b_canvas.getContext ("2d"); // finds the canvas element in the DOM/web
+	b_context.font = '48px serif'; // picks the font that i choose to display my name with
+	b_context.fillText('Meagan Nguyen', 20, 100); // fills with text that is contained in the parenthesis (my actual name), with where it goes on the canvas x,y 
 </script>
 
 
@@ -80,7 +85,7 @@ function rect() {	// name of function, purpose of function is to draw a rectangl
 </div>
 	
 <div id="content" class="w3-container"> 
-	<p>Objective: display elememts onto a portion of an HTML5 page, known as a canvas.</p> 
+	<p>Objective: display elements onto a portion of an HTML5 page, known as a canvas.</p> 
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Go to the canvas. </a>
 	
@@ -96,7 +101,7 @@ function rect() {	// name of function, purpose of function is to draw a rectangl
 		<!-- dimensions are 400x400 because it fits webpage on both, laptop/iphone screen -->	
 	     	<canvas id="b" width="400" height="400" style="border:1px solid #000000;"></canvas> <!-- creates a border -->
 		<a onclick="rect();" class="w3-btn w3-green"> Rectangle</a> <!-- button to showcase the button to display rectangle -->
-	
+		<a onclick="myName()" class="w3-btn w3-green"> Name</a> <!-- button to display my name -->
 	
 	</div>
 </div>
