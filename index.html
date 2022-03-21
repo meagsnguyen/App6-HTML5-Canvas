@@ -64,7 +64,7 @@ function insertImage() {	// function displays chosen image onto canvas
 	var b_context = b_canvas.getContext("2d"); // calls canvas to webpage
 	var img = new Image(); // creates var to pull image to link
 	img.onload = function() { // image is loaded 
-			b_context.drawImage(img, 10, 10); // selects chosen image and positions it in x,y dimensions
+			b_context.drawImage(img, 40, 130, 88, 56); // selects chosen image and positions it in x,y dimensions, (88, 56) scales the image smaller to fit the canvas
 	};
 	img.src = 'https://i.kym-cdn.com/entries/icons/original/000/026/942/bibble.jpg'; // image URL is defined, URL is from google and is obtained from copy link address
 
